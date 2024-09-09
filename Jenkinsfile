@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials' // ID for your Docker Hub credentials
-        DOCKER_IMAGE_NAME = 'yourusername/your-image-name'
+        DOCKER_IMAGE_NAME = 'sanket406/newimage'
         DOCKER_TAG = 'latest'
     }
     stages {
