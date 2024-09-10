@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+    docker {
+        image 'amazonlinux'
+    }
+}
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials' // ID for your Docker Hub credentials
         DOCKER_IMAGE_NAME = 'sanket406/newimage'
