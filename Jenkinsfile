@@ -2,7 +2,7 @@ pipeline {
     agent {
     docker {
         image 'docker:20.10-dind' // Docker-in-Docker image
-        args '-v /var/lib/docker'
+        args '--privileged'
     }
 }
     environment {
