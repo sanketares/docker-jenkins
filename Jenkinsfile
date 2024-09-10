@@ -1,7 +1,8 @@
 pipeline {
     agent {
     docker {
-        image 'amazonlinux'
+        image 'docker:20.10-dind' // Docker-in-Docker image
+        args '-v /var/lib/docker'
     }
 }
     environment {
